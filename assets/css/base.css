@@ -1,0 +1,61 @@
+/* Font: Do Hyeon & Lato */
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    /* Color */
+    --bg-color: #2b2b2b;
+    --color-principal: #F47B1B;
+    --text-color: #fff;
+    --text-color-second: #8B5124;
+
+    /* Font */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+    --normal-font: 1rem;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: var(--normal-font);
+    font-weight: var(--font-regular);
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--bg-color) url('../img/Background.png') no-repeat center 10% / auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.col__left {
+    width: calc(50% - 23px);
+}
+
+.col__right {
+    text-align: right;
+    width: calc(50% - 23px);
+}
+

@@ -1,0 +1,116 @@
+/* Navbar */
+.header__navbar-list {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+    margin-top: 51px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.header__navbar-item {
+    position: relative;
+    font-size: 20px;
+    color: var(--color-principal);
+    font-weight: var(--font-medium);
+}
+
+.header__navbar-item:hover {
+    cursor: pointer;
+}
+
+.header__navbar-item-link {
+    margin-left: 5px;
+    color: var(--color-principal);
+}
+
+.header__navbar-item.active {
+    border-bottom: 2px solid var(--color-principal);
+}
+
+.header__navbar-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-principal);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.header__navbar-item:hover::after {
+    transform: scaleX(1);
+}
+
+/* container */
+.app__container {
+    margin-top: 100px;
+}
+
+.about {
+    display: flex;
+}
+
+.about__name {
+    display: block;
+    color: var(--color-principal);
+    font-size: 36px;
+    font-family: 'Do Hyeon', sans-serif;
+    margin-bottom: 20px;
+}
+
+.about__desc {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__title {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Do Hyeon', sans-serif;
+    margin-bottom: 25px;
+}
+
+.contact__item {
+    margin-bottom: 32px;
+    width: 600px;
+    height: 68px;
+    border: 1px solid var(--color-principal);
+    background-color: transparent;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+.contact__item i {
+    color: var(--color-principal);
+}
+
+.contact__item span {
+    color: var(--text-color);
+}
+
+.about__right-item {
+    position: relative;
+    text-align: right;
+    width: 420px;
+    height: 440px;
+    border: 1px solid var(--color-principal);
+    border-radius: 16px;
+    margin-left: 191px;
+}
+
+.about__right-item-img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 18px;
+}
